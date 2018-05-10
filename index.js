@@ -286,7 +286,7 @@ const assertHandlers = Alexa.CreateStateHandler(states.ASSERT, {
 					    
 					    //newArr[i] = 
 					    this.attributes["type"][this.attributes["counter"]] = JSON.stringify({"question" : this.attributes["counter"], "score": score});
-					    console.log("SentimentError - Set new score of " + score + " in " + newArr[i]);
+					    console.log("SentimentError - Set new score of " + score);
 					    //this.attributes["type"] = newArr;
 				  }
 		 
