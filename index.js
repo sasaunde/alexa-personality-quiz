@@ -412,8 +412,9 @@ const quizHandlers = Alexa.CreateStateHandler(states.QUIZ,{
 
 	        this.handler.state = states.ASSERT;
 	        
-	        
-	        console.log('Slots: ' +this.event.request.intent.slots);
+	        if(this.event.request.intent) {
+	           console.log('Slots: ' +this.event.request.intent.slots);
+		}
 	    
 	        let answer = getSlot(this.event.request.intent.slots);
 	        
